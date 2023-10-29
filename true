@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>api</name>
+    </assembly>
+    <members>
+        <member name="M:api.Controllers.HeroiController.cadastrar(api.Models.Heroi)">
+            <summary>
+            Cadastra um novo herói.
+            </summary>
+            <param name="h">Objeto Heroi a ser cadastrado.</param>
+            <returns>Objeto Heroi criado.</returns>
+        </member>
+    </members>
+</doc>

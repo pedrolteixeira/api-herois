@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>api</name>
+    </assembly>
+    <members>
+        <member name="M:api.Controllers.HeroiController.cadastrar(api.Models.Heroi)">
+            <summary>
+            Cadastra um Héroi.
+            </summary>
+            <param name="h">Heroi para cadastrar</param>
+            <response code="200">O heroi foi cadastrado corretamente</response>
+            <response code="400">Dados inválidos</response>
+        </member>
+        <member name="M:api.Controllers.HeroiController.Editar(api.Models.Heroi)">
+            <summary>
+            Atualiza um Herói existente.
+            </summary>
+            <param name="h">Herói para atualizar.</param>
+            <returns> Herói atualizado</returns>
+            <response code="200"> Herói atualizado com sucesso</response>
+            <response code="400"> Erro ao atualizar o herói</response>
+        </member>
+        <member name="M:api.Controllers.HeroiController.excluir(System.Int32)">
+            <summary>
+            Exclui um Herói pelo ID.
+            </summary>
+            <param name="id">ID do Herói para excluir.</param>
+            <returns> Herói excluído corretamente</returns>
+            <response code="200"> Herói excluído</response>
+            <response code="400"> Id inválido</response>
+            <response code="404"> Herói não encontrado</response>
+        </member>
+        <member name="M:api.Controllers.HeroiController.listar">
+            <summary>
+            Lista todos os Herois cadastrados.
+            </summary>
+            <returns>Lista de Heróis cadastrados</returns>
+            <response code="200">Lista de Heróis cadastrados</response>
+        </member>
+        <member name="M:api.Controllers.HeroiController.filtrar(System.Int32)">
+            <summary>
+            Filtra um Herói pelo ID.
+            </summary>
+            <param name="id">ID do Herói para filtrar.</param>
+            <returns>Retorna o Herói encontrado.</returns>
+            <response code="200"> Herói encontrado</response>
+            <response code="400"> Id inválido</response>
+            <response code="404"> Herói não encontrado</response>
+        </member>
+    </members>
+</doc>
